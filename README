@@ -1,0 +1,8 @@
+#1. Para acceder a la consola de administración
+http://localhost:8080/console
+jdbc:h2:mem:testdb --> sa /
+
+#2. curl para insertar y para obtener los usuarios
+curl -X POST http://localhost:8080/user -H 'Content-Type: application/json' -d'{"username": "admin", "password": "1234"}' 
+curl -X POST http://localhost:8080/user -H 'Content-Type: application/json' -d'{"username": "jorge", "password": "1234"}'
+curl -X GET http://localhost:8080/user
