@@ -6,7 +6,3 @@ jdbc:h2:mem:testdb --> sa /
 curl -X POST http://localhost:8080/user -H 'Content-Type: application/json' -d'{"username": "admin", "password": "1234"}' 
 curl -X POST http://localhost:8080/user -H 'Content-Type: application/json' -d'{"username": "jorge", "password": "1234"}'
 curl -X GET http://localhost:8080/user
-
-<h1>hola</h1>
-
-h1. hola
